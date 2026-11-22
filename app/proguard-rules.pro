@@ -1,0 +1,1 @@
+# FastCMS ProGuard rules
