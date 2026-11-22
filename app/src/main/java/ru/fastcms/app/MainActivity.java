@@ -1,5 +1,5 @@
 package ru.fastcms.app;
-
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
