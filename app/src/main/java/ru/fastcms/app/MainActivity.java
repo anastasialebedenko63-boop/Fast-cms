@@ -224,8 +224,3 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-
-
-    </application>
-
-</manifest>
