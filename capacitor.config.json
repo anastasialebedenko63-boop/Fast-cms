@@ -1,0 +1,17 @@
+{
+  "appId": "ru.fastcms.app",
+  "appName": "FastCMS",
+  "webDir": "www",
+  "server": {
+    "url": "https://fast-cms.ru/",
+    "cleartext": true,
+    "allowNavigation": [
+      "fast-cms.ru",
+      "*.fast-cms.ru",
+      "fast-cms.online",
+      "*.fast-cms.online",
+      "yookassa.ru",
+      "*.yookassa.ru"
+    ]
+  }
+}
