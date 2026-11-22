@@ -25,10 +25,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        webView = findViewById(R.id.webview);
-        progressBar = findViewById(R.id.progressBar);
+        int layoutId = getResources().getIdentifier("activity_main", "layout", getPackageName());
+        if (layoutId != 0) {
+            setContentView(layoutId);
+            int webId = getResources().getIdentifier("webview", "id", getPackageName());
+            if (webId != 0) {
+                webView = findViewById(webId);
+            }
+            int progressId = getResources().getIdentifier("progressBar", "id", getPackageName());
+            if (progressId != 0) {
+                progressBar = findViewById(progressId);
+            }
+        }
+
+        if (webView == null) {
+            webView = new WebView(this);
+            setContentView(webView);
+        }
 
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
